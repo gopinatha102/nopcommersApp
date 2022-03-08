@@ -104,7 +104,7 @@ class Addcustomer:
         drp = Select(self.driver.find_element_by_xpath(self.drpmgrofVendor_Xpath))
         drp.select_by_visible_text(value)
 
-    def setNewsLetter(self, value):
+    def setNewsLetter(self, value, gender=None):
         #drp = Select(self.driver.find_element_by_xpath(self.Newsletter_Xpath))
         #drp.select_by_visible_text(value)
         self.driver.find_element_by_xpath(self.Newsletter_Xpath).click()

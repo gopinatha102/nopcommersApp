@@ -7,21 +7,20 @@ def setup(browser):
     if browser == 'Chrome':
 
         driver = webdriver.Chrome(
-            executable_path=r"C:\Users\PAVAN KUMARA\PycharmProjects\selenium\driver\chromedriver_win32\chromedriver.exe")
+            executable_path="C:\\Users\\DELL\\PycharmProjects\\DemoProject\\Drivers\\chromedriver.exe")
         # driver=webdriver.Chrome()
         print("Launching Chrome driver")
 
     elif browser == 'firefox':
         driver = webdriver.Firefox(
-            executable_path=r"C:\Users\PAVAN KUMARA\PycharmProjects\driver\geckodriver-v0.29.1-win64\geckodriver")
+            executable_path=r"C:\Users\DELL\PycharmProjects\driver\geckodriver-v0.29.1-win64\geckodriver")
         print("Launching Firefox driver ")
 
     else:
-        driver = webdriver.ie(executable_path=r"C:\Users\PAVAN KUMARA\PycharmProjects\driver")
+        driver = webdriver.Ie(executable_path=r"C:\Users\PAVAN KUMARA\PycharmProjects\driver")
         print("Launching Inetenet Exploer ")
 
     return driver
-
 
 def pytest_addoption(parser):  # This will get the value from CLI/hooks
     parser.addoption("--browser")

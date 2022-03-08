@@ -29,7 +29,7 @@ class Test_001_Login:
 
         else:
             self.driver.save_screenshot(
-                r"C:\Users\PAVAN KUMARA\PycharmProjects\nopcommerceApp\Screenshots\screenshot1" + "test_homePageTitle.png")
+                r"C:\Users\DELL\PycharmProjects\nopcommerceApp\Screenshots\screenshot1" + "test_homePageTitle.png")
             self.driver.close()
             self.logger.error("home page title failed")
             assert False
@@ -54,7 +54,7 @@ class Test_001_Login:
 
         else:
             self.driver.save_screenshot(
-                r"C:\Users\PAVAN KUMARA\PycharmProjects\nopcommerceApp\Screenshots\screenshot2" + "test_homePageTitle.png")
+                r"C:\Users\DELL\PycharmProjects\nopcommerceApp\Screenshots\screenshot2" + "test_homePageTitle.png")
             self.driver.close()
             self.logger.error("test case Failed ")
             assert False
